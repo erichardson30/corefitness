@@ -1,23 +1,353 @@
-<div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
+<!-- Carousel
+================================================== -->
+<div class="container-fluid hidden-xs">
+    <div id="myCarousel" class="carousel slide">
+      <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="http://placehold.it/1500X500" style="width:100%" class="img-responsive">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Bootstrap 3 Carousel Layout</h1>
+              <p></p>
+              <p><a class="btn btn-lg btn-primary" href="http://getbootstrap.com">Learn More</a>
+            </p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="http://placehold.it/1500X500" style="width:100%" class="img-responsive">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Changes to the Grid</h1>
+              <p>Bootstrap 3 still features a 12-column grid, but many of the CSS class names have completely changed.</p>
+              <p><a class="btn btn-large btn-primary" href="#">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="http://placehold.it/1500X500" style="width:100%" class="img-responsive">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Percentage-based sizing</h1>
+              <p>With "mobile-first" there is now only one percentage-based grid.</p>
+              <p><a class="btn btn-large btn-primary" href="#">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="icon-prev"></span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="icon-next"></span>
+      </a>
+    </div>
+</div>
+<!-- /.carousel -->
+
+
+<div id="main">
+<div id="home-child-pages" class="home-widget-container">
+    <div class="container-fluid">
+        <!-- Homepage Child Pages Start -->
+        <h2 class="home-widget">We offer a wide variety of trainings to <br /> achieve the best results</h2>
+        <div class="row">
+            <div class="home-child-boxes col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <div class="home-child-boxes-container">
+                    <a href="#!">
+                        <div class="home-child-image-pro">
+                            <img src="images/demo/icon-4.png" alt="cardio">
+                        </div>
+                    </a>
+                    <h4 class="home-child-title">Cardio Training</h4>
+                    <a href="#!" class="ls-sc-button secondary">READ MORE</a>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="home-child-boxes col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <div class="home-child-boxes-container">
+                    <a href="#!">
+                        <div class="home-child-image-pro">
+                            <img src="images/demo/icon-1.png" alt="yoga">
+                        </div>
+                    </a>
+                    <h4 class="home-child-title">Yoga Pilates</h4>
+                    <a href="#!" class="ls-sc-button secondary">READ MORE</a>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="home-child-boxes col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <div class="home-child-boxes-container">
+                    <a href="#!">
+                        <div class="home-child-image-pro">
+                            <img src="images/demo/icon-3.png" alt="power training">
+                        </div>
+                    </a>
+                    <h4 class="home-child-title">Power Training</h4>
+                    <a href="#!" class="ls-sc-button secondary">READ MORE</a>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="home-child-boxes col-lg-3 col-md-3 col-sm-12 col-xs-12 lastcolumn-progression">
+                <div class="home-child-boxes-container">
+                    <a href="#!">
+                        <div class="home-child-image-pro">
+                            <img src="images/demo/icon-2.png" alt="aerobics">
+                        </div>
+                    </a>
+                    <h4 class="home-child-title">Aerobics</h4>
+                    <a href="#!" class="ls-sc-button secondary">READ MORE</a>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        <!-- Homepage Child Pages End -->
+        </div><!-- close .width-container -->
+    </div>
 </div>
 
-<div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
 
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
+<!-- <div id="training-posts-home" class="home-widget-container">
+    <div class="training-posts-img">
+        <img src="images/demo/trainer.jpg" alt="pro-trainer">
+    </div>
+    <div class="training-slider">
+        <h2 class="home-widget">Personal Training Plans</h2>
+        <p class="home-widget-caption">No one would have believed in the last years of the nine-<br /> teenth century that this world was being watched keenly</p>
+        <div id="trainer-slider-wrapper">
+            <div class="flexslider training-slider-pro fiziko-slider-pro">
+                <ul class="slides">
+                    <li>
+                        <div class="training-columns">
+                            <div class="grid2column-progression">
+                                <p class="plan-title">Beginner Plan Basic</p>
+                                <p class="plan-pricing">$ 29.99 / month</p>
+                                <a class="training-sign-up ls-sc-button">Sign Up</a>
+                            </div>
+                            <div class="grid2column-progression lastcolumn-progression">
+                                <ul class="training-list">
+                                    <li>Intelligences greater than man’s</li>
+                                    <li>No one would have believed</li>
+                                    <li>Century that this world was being </li>
+                                    <li>Watched keenly and closely by</li>
+                                    <li>Lorem ipsum dolor sit amet</li>
+                                </ul>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="training-columns">
+                            <div class="grid2column-progression">
+                                <p class="plan-title">Advanced Plan</p>
+                                <p class="plan-pricing">$ 39.99 / month</p>
+                                <a class="training-sign-up ls-sc-button">Sign Up</a>
+                            </div>
+                            <div class="grid2column-progression lastcolumn-progression">
+                                <ul class="training-list">
+                                    <li>No one would have believed</li>
+                                    <li>In the last years of the nineteenth</li>
+                                    <li>Watched keenly and closely by</li>
+                                    <li>Intelligences greater than man’s</li>
+                                </ul>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="training-columns">
+                            <div class="grid2column-progression">
+                                <p class="plan-title">Pro Plan</p>
+                                <p class="plan-pricing">$ 999.99 / year</p>
+                                <a class="training-sign-up ls-sc-button">Sign Up</a>
+                            </div>
+                            <div class="grid2column-progression lastcolumn-progression">
+                                <ul class="training-list">
+                                    <li>No one would have believed</li>
+                                    <li>In the last years of the nineteenth</li>
+                                    <li>Century that this world was being </li>
+                                    <li>Watched keenly and closely by</li>
+                                    <li>Intelligences greater than man’s</li>
+                                </ul>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</div> -->
 
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
+<div id="trainers-home-pro" class="home-widget-container">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="content-boxed-fiziko col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="featured-media">
+                    <a href="#!" class="hover-gradient">
+                        <img src="images/demo/bigstock-Fitness-center-senior-woman-ex-30986588.jpg" alt="bigstock-fitness-sport-training-gym--54289208">
+                    </a>
+                    <div class="gradient-overlay"></div>
+                    <div class="featured-media-overlay">
+                        <div class="trainer-name">Meal Plans</div>
+                        <div class="trainer-dsc">Help plan meals</div>
+                    </div>
+                </div>
+                <div class="trainers-content-index">
+                    <p class="summary">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nisl quam. Pellentesque gravida nec tortor condimentum tempus morbi eget lacus eros.
+                    </p>
+
+                    <div class="trainers-sep"></div>
+
+                    <div class="grid2column-progression">
+                        <div class="training-price-text-box">
+                            <span class="training-price-text">Price</span>
+                        </div>
+                    </div>
+                    <div class="grid2column-progression lastcolumn-progression">
+                        <div class="training-price-number">$69.00</div>
+                        <span class="training-price-desc">1 - 5 plans / month</span>
+                    </div>
+                    <div class="clearfix"></div>
+
+                    <a class="progression-button training-sign-up trainers" href="#!">Sign Up Now</a>
+                </div>
+            </div>
+            <div class="content-boxed-fiziko col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="featured-media">
+                    <a href="#!" class="hover-gradient">
+                        <img src="images/demo/bigstock-fitness-sport-training-gym--54289208.jpg" alt="bigstock-fitness-sport-training-gym--54289208">
+                    </a>
+                    <div class="gradient-overlay"></div>
+                    <div class="featured-media-overlay">
+                        <div class="trainer-name">Challenge Guide</div>
+                        <div class="trainer-dsc">Help challege yourself every day</div>
+                    </div>
+                </div>
+                <div class="trainers-content-index">
+                    <p class="summary">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nisl quam. Pellentesque gravida nec tortor condimentum tempus morbi eget lacus eros.
+                    </p>
+                    <div class="trainers-sep"></div>
+                    <div class="grid2column-progression">
+                        <div class="training-price-text-box">
+                            <span class="training-price-text">Price</span>
+                        </div>
+                    </div>
+                    <div class="grid2column-progression lastcolumn-progression">
+                        <div class="training-price-number">$69.00</div>
+                        <span class="training-price-desc">1 - 5 sessions / month</span>
+                    </div>
+                    <div class="clearfix"></div>
+                    <a class="progression-button training-sign-up trainers" href="#!">Sign Up Now</a>
+                </div>
+            </div>
+            <div class="content-boxed-fiziko col-lg-4 col-md-4 col-sm-12 col-xs-12 lastcolumn-progression">
+                <div class="featured-media">
+                    <a href="#!" class="hover-gradient">
+                        <img src="images/demo/bigstock-working-out-in-the-fitness-stu-51525976.jpg" alt="bigstock-fitness-sport-training-gym--54289208">
+                    </a>
+                    <div class="gradient-overlay"></div>
+                    <div class="featured-media-overlay">
+                        <div class="trainer-name">Workout Plan</div>
+                        <div class="trainer-dsc">Learn what to do in the gym</div>
+                    </div>
+                </div>
+                <div class="trainers-content-index">
+                    <p class="summary">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nisl quam. Pellentesque gravida nec tortor condimentum tempus morbi eget lacus eros.
+                    </p>
+                    <div class="trainers-sep"></div>
+                    <div class="grid2column-progression">
+                        <div class="training-price-text-box">
+                            <span class="training-price-text">Price</span>
+                        </div>
+                    </div>
+                    <div class="grid2column-progression lastcolumn-progression">
+                        <div class="training-price-number">$69.00</div>
+                        <span class="training-price-desc">1 - 5 sessions / month</span>
+                    </div>
+                    <div class="clearfix"></div>
+                    <a class="progression-button training-sign-up trainers" href="#!">Sign Up Now</a>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
 </div>
+<div class="clearfix"></div>
+</div><!-- close #main -->
+
+<div id="pyre_homepage_media-widget-product-feat-2" class="widget home-background-widget">
+<div class="footer-highlight">
+    <div class="container-fluid">
+        <h2>Sign Up For Our Newsletter!
+            <!-- <a class="ls-sc-button fiziko-footer-button">Learn more about getting Fiziko</a> -->
+        </h2>
+        <form class="form-inline">
+            <div class="form-group">
+                <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <div class="clearfix"></div>
+    </div>
+</div>
+</div>
+
+<!-- <div id="widget-area">
+<div class="width-container footer-4-column">
+    <div id="pyre_classes_media-widget-feat-2" class="widget pyre_classes_media-feat">
+        <h6 class="widget-title">Classes</h6>
+        <div class="classes-widget-pro">
+            <div>
+                <a href="#!">About our Classes</a><br />
+                <a href="#!">Find a Class</a><br />
+                <a href="#!">Find an Instructor</a><br />
+                <a href="#!">Become an Instructor</a><br />
+            </div>
+        </div>
+    </div>
+
+    <div id="hours-widget-feat-2" class="widget hours-widget">
+        <h6 class="widget-title">Opening Hours</h6>
+        <div class="hours-widget-pro">
+            <div>
+                <span>Mon - Fri 9:00 - 22:00</span><br />
+                <span>Sat - Sun 10:00 - 18:00</span><br />
+            </div>
+        </div>
+    </div>
+
+    <div id="support-widget-feat-2" class="widget support-widget">
+        <h6 class="widget-title">Support</h6>
+        <div class="support-widget-pro">
+            <div>
+                <a href="#!">Contact Us</a><br />
+                <a href="#!">FAQs</a><br />
+                <a href="#!">Terms & Conditions</a><br />
+            </div>
+        </div>
+    </div>
+
+    <div id="newsletter-widget-feat-2" class="widget newsletter-widget">
+        <h6 class="widget-title">Sign Up To Our Newsletter</h6>
+
+    </div>
+</div>
+<div class="clearfix"></div>
+</div> -->

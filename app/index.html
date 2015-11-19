@@ -8,392 +8,65 @@
     <meta charset="utf-8">
     <title>Core Elevation</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/responsive.css">
     <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
     <link href='http://fonts.googleapis.com/css?family=Arimo:400,700%7cVarela+Round' rel='stylesheet' type='text/css'>
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel='stylesheet' href='bower_components/bootstrap/dist/css/bootstrap.css' />
+    <link rel='stylesheet' href='bower_components/Yamm3/yamm/yamm.css' />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <!-- endbuild -->
 </head>
 <body ng-app="corefitnessApp" class="home">
-
     <div class="container-fluid">
-        <a id="logo" href="index.html" title="Core Elevation Fitness & Wellness" rel="home">
-            <img src="images/CoreFitnessLogo.jpg" alt="Core Elevation">
+        <a id="logo" href="#/" title="Core Elevation Fitness & Wellness" rel="home">
+            <img class="img-responsive" src="images/CoreFitnessLogo.jpg" alt="Core Elevation">
         </a>
     </div>
-    <nav class="navbar navbar-default" data-spy="affix" data-offset-top="197">
-        <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Page 1</a></li>
-            <li><a href="#">Page 2</a></li>
-            <li><a href="#">Page 3</a></li>
-        </ul>
+
+    <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#/">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#/about">About</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><i class="fa fa-sign-in fa-lg"></i> Sign In</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
     </nav>
 
-        <!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="http://placehold.it/1500X500" style="width:100%" class="img-responsive">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Bootstrap 3 Carousel Layout</h1>
-              <p></p>
-              <p><a class="btn btn-lg btn-primary" href="http://getbootstrap.com">Learn More</a>
-            </p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="http://placehold.it/1500X500" style="width:100%" class="img-responsive">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Changes to the Grid</h1>
-              <p>Bootstrap 3 still features a 12-column grid, but many of the CSS class names have completely changed.</p>
-              <p><a class="btn btn-large btn-primary" href="#">Learn more</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="http://placehold.it/1500X500" style="width:100%" class="img-responsive">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Percentage-based sizing</h1>
-              <p>With "mobile-first" there is now only one percentage-based grid.</p>
-              <p><a class="btn btn-large btn-primary" href="#">Browse gallery</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Controls -->
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-        <span class="icon-prev"></span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">
-        <span class="icon-next"></span>
-      </a>
-    </div>
-    <!-- /.carousel -->
-
-
     <div id="main">
-        <div id="home-child-pages" class="home-widget-container">
-            <div class="width-container">
-                <!-- Homepage Child Pages Start -->
-                <h2 class="home-widget">We offer a wide variety of trainings to <br /> achieve the best results</h2>
-                <div class="home-child-boxes grid4column-progression">
-                    <div class="home-child-boxes-container">
-                        <a href="#!">
-                            <div class="home-child-image-pro">
-                                <img src="images/demo/icon-4.png" alt="cardio">
-                            </div>
-                            <h4 class="home-child-title">Cardio Training</h4>
-                        </a>
-                        <a href="#!" class="ls-sc-button secondary">READ MORE</a>
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-                <div class="home-child-boxes grid4column-progression">
-                    <div class="home-child-boxes-container">
-                        <a href="#!">
-                            <div class="home-child-image-pro">
-                                <img src="images/demo/icon-1.png" alt="yoga">
-                            </div>
-                            <h4 class="home-child-title">Yoga Pilates</h4>
-                        </a>
-                        <a href="#!" class="ls-sc-button secondary">READ MORE</a>
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-                <div class="home-child-boxes grid4column-progression">
-                    <div class="home-child-boxes-container">
-                        <a href="#!">
-                            <div class="home-child-image-pro">
-                                <img src="images/demo/icon-3.png" alt="power training">
-                            </div>
-                            <h4 class="home-child-title">Power Training</h4>
-                        </a>
-                        <a href="#!" class="ls-sc-button secondary">READ MORE</a>
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-
-                <div class="home-child-boxes grid4column-progression lastcolumn-progression">
-                    <div class="home-child-boxes-container">
-                        <a href="#!">
-                            <div class="home-child-image-pro">
-                                <img src="images/demo/icon-2.png" alt="aerobics">
-                            </div>
-                            <h4 class="home-child-title">Aerobics</h4>
-                        </a>
-                        <a href="#!" class="ls-sc-button secondary">READ MORE</a>
-                    <div class="clearfix"></div>
-                    </div>
-                <div class="clearfix"></div>
-                </div>
-                <div class="clearfix"></div>
-                <!-- Homepage Child Pages End -->
-            </div><!-- close .width-container -->
-        </div>
-
-
-        <div id="training-posts-home" class="home-widget-container">
-            <div class="training-posts-img">
-                <img src="images/demo/trainer.jpg" alt="pro-trainer">
-            </div>
-            <div class="training-slider">
-                <h2 class="home-widget">Personal Training Plans</h2>
-                <p class="home-widget-caption">No one would have believed in the last years of the nine-<br /> teenth century that this world was being watched keenly</p>
-                <div id="trainer-slider-wrapper">
-                    <div class="flexslider training-slider-pro fiziko-slider-pro">
-                        <ul class="slides">
-                            <li>
-                                <div class="training-columns">
-                                    <div class="grid2column-progression">
-                                        <p class="plan-title">Beginner Plan Basic</p>
-                                        <p class="plan-pricing">$ 29.99 / month</p>
-                                        <a class="training-sign-up ls-sc-button">Sign Up</a>
-                                    </div>
-                                    <div class="grid2column-progression lastcolumn-progression">
-                                        <ul class="training-list">
-                                            <li>Intelligences greater than man’s</li>
-                                            <li>No one would have believed</li>
-                                            <li>Century that this world was being </li>
-                                            <li>Watched keenly and closely by</li>
-                                            <li>Lorem ipsum dolor sit amet</li>
-                                        </ul>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="training-columns">
-                                    <div class="grid2column-progression">
-                                        <p class="plan-title">Advanced Plan</p>
-                                        <p class="plan-pricing">$ 39.99 / month</p>
-                                        <a class="training-sign-up ls-sc-button">Sign Up</a>
-                                    </div>
-                                    <div class="grid2column-progression lastcolumn-progression">
-                                        <ul class="training-list">
-                                            <li>No one would have believed</li>
-                                            <li>In the last years of the nineteenth</li>
-                                            <li>Watched keenly and closely by</li>
-                                            <li>Intelligences greater than man’s</li>
-                                        </ul>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="training-columns">
-                                    <div class="grid2column-progression">
-                                        <p class="plan-title">Pro Plan</p>
-                                        <p class="plan-pricing">$ 999.99 / year</p>
-                                        <a class="training-sign-up ls-sc-button">Sign Up</a>
-                                    </div>
-                                    <div class="grid2column-progression lastcolumn-progression">
-                                        <ul class="training-list">
-                                            <li>No one would have believed</li>
-                                            <li>In the last years of the nineteenth</li>
-                                            <li>Century that this world was being </li>
-                                            <li>Watched keenly and closely by</li>
-                                            <li>Intelligences greater than man’s</li>
-                                        </ul>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-
-
-        <div id="trainers-home-pro" class="home-widget-container">
-            <div class="width-container">
-                <div class="content-boxed-fiziko grid3column-progression">
-                    <div class="featured-media">
-                        <a href="#!" class="hover-gradient">
-                            <img src="images/demo/bigstock-Fitness-center-senior-woman-ex-30986588.jpg" alt="bigstock-fitness-sport-training-gym--54289208">
-                        </a>
-                        <div class="gradient-overlay"></div>
-                        <div class="featured-media-overlay">
-                            <div class="trainer-name">Angelina Scott</div>
-                            <div class="trainer-dsc">Weight loss, Functional Training</div>
-                        </div>
-                    </div>
-                    <div class="trainers-content-index">
-                        <p class="summary">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nisl quam. Pellentesque gravida nec tortor condimentum tempus morbi eget lacus eros.
-                        </p>
-
-                        <div class="trainers-sep"></div>
-
-                        <div class="grid2column-progression">
-                            <div class="training-price-text-box">
-                                <span class="training-price-text">Training Price</span>
-                            </div>
-                        </div>
-                        <div class="grid2column-progression lastcolumn-progression">
-                            <div class="training-price-number">$69.00</div>
-                            <span class="training-price-desc">1 - 5 sessions / month</span>
-                        </div>
-                        <div class="clearfix"></div>
-
-                        <a class="progression-button training-sign-up trainers" href="#!">Sign Up Now</a>
-                    </div>
-                </div>
-                <div class="content-boxed-fiziko grid3column-progression">
-                    <div class="featured-media">
-                        <a href="#!" class="hover-gradient">
-                            <img src="images/demo/bigstock-fitness-sport-training-gym--54289208.jpg" alt="bigstock-fitness-sport-training-gym--54289208">
-                        </a>
-                        <div class="gradient-overlay"></div>
-                        <div class="featured-media-overlay">
-                            <div class="trainer-name">Philip Morris</div>
-                            <div class="trainer-dsc">Toning and shaping, Body Building</div>
-                        </div>
-                    </div>
-                    <div class="trainers-content-index">
-                        <p class="summary">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nisl quam. Pellentesque gravida nec tortor condimentum tempus morbi eget lacus eros.
-                        </p>
-
-                        <div class="trainers-sep"></div>
-
-                        <div class="grid2column-progression">
-                            <div class="training-price-text-box">
-                                <span class="training-price-text">Training Price</span>
-                            </div>
-                        </div>
-                        <div class="grid2column-progression lastcolumn-progression">
-                            <div class="training-price-number">$69.00</div>
-                            <span class="training-price-desc">1 - 5 sessions / month</span>
-                        </div>
-                        <div class="clearfix"></div>
-
-                        <a class="progression-button training-sign-up trainers" href="#!">Sign Up Now</a>
-                    </div>
-                </div>
-                <div class="content-boxed-fiziko grid3column-progression lastcolumn-progression">
-                    <div class="featured-media">
-                        <a href="#!" class="hover-gradient">
-                            <img src="images/demo/bigstock-working-out-in-the-fitness-stu-51525976.jpg" alt="bigstock-fitness-sport-training-gym--54289208">
-                        </a>
-                        <div class="gradient-overlay"></div>
-                        <div class="featured-media-overlay">
-                            <div class="trainer-name">Eva Conrad</div>
-                            <div class="trainer-dsc">Weight loss, Functional Training</div>
-                        </div>
-                    </div>
-                    <div class="trainers-content-index">
-                        <p class="summary">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nisl quam. Pellentesque gravida nec tortor condimentum tempus morbi eget lacus eros.
-                        </p>
-
-                        <div class="trainers-sep"></div>
-
-                        <div class="grid2column-progression">
-                            <div class="training-price-text-box">
-                                <span class="training-price-text">Training Price</span>
-                            </div>
-                        </div>
-                        <div class="grid2column-progression lastcolumn-progression">
-                            <div class="training-price-number">$69.00</div>
-                            <span class="training-price-desc">1 - 5 sessions / month</span>
-                        </div>
-                        <div class="clearfix"></div>
-
-                        <a class="progression-button training-sign-up trainers" href="#!">Sign Up Now</a>
-                    </div>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-    <div class="clearfix"></div>
-    </div><!-- close #main -->
-
-
-    <div id="pyre_homepage_media-widget-product-feat-2" class="widget home-background-widget">
-        <div class="footer-highlight">
-            <div class="width-container">
-                <h2>Reserve a Free Trial Class! <a class="ls-sc-button fiziko-footer-button">Learn more about getting Fiziko</a></h2>
-            <div class="clearfix"></div>
-            </div>
-        </div>
+        <!-- angular templating -->
+        <!-- this is where content will be injected -->
+        <div ng-view></div>
     </div>
-
-    <div id="widget-area">
-        <div class="width-container footer-4-column">
-            <div id="pyre_classes_media-widget-feat-2" class="widget pyre_classes_media-feat">
-                <h6 class="widget-title">Classes</h6>
-                <div class="classes-widget-pro">
-                    <div>
-                        <a href="#!">About our Classes</a><br />
-                        <a href="#!">Find a Class</a><br />
-                        <a href="#!">Find an Instructor</a><br />
-                        <a href="#!">Become an Instructor</a><br />
-                    </div>
-                </div>
-            </div>
-
-            <div id="hours-widget-feat-2" class="widget hours-widget">
-                <h6 class="widget-title">Opening Hours</h6>
-                <div class="hours-widget-pro">
-                    <div>
-                        <span>Mon - Fri 9:00 - 22:00</span><br />
-                        <span>Sat - Sun 10:00 - 18:00</span><br />
-                    </div>
-                </div>
-            </div>
-
-            <div id="support-widget-feat-2" class="widget support-widget">
-                <h6 class="widget-title">Support</h6>
-                <div class="support-widget-pro">
-                    <div>
-                        <a href="#!">Contact Us</a><br />
-                        <a href="#!">FAQs</a><br />
-                        <a href="#!">Terms & Conditions</a><br />
-                    </div>
-                </div>
-            </div>
-
-            <div id="newsletter-widget-feat-2" class="widget newsletter-widget">
-                <h6 class="widget-title">Sign Up To Our Newsletter</h6>
-                <div class="newletter-container"><!-- Begin MailChimp Signup Form -->
-                    <div id="mc_embed_signup"><form action="//progressionstudios.us1.list-manage.com/subscribe/post?u=1a06aa3bca8613232881e8a6e&amp;id=2f5a556941" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate=""><div class="mc-field-group"> <label for="mce-EMAIL">Enter Your Email Address </label> <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Your E-mail Address"></div><div id="mce-responses" class="clear"><div class="response" id="mce-error-response" style="display:none"></div><div class="response" id="mce-success-response" style="display:none"></div></div><div style="position: absolute; left: -5000px;"><input type="text" name="b_1a06aa3bca8613232881e8a6e_2f5a556941" tabindex="-1" value=""></div><div class="clear"><input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="button"></div></form></div>
-                    <!--End mc_embed_signup-->
-                </div>
-            </div>
-        </div>
-        <div class="clearfix"></div>
-    </div>
-
-
     <footer>
         <div id="copyright">
             <div class="width-container">
-                <div id="copyrigh-text">© 2015 All Rights Reserved. Developed by ProgressionStudios</div>
+                <div id="copyrigh-text">© 2015 All Rights Reserved.</div>
                 <div class="footer-social-icons">
                     <div class="social-ico">
                         <a href="http://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
@@ -411,26 +84,26 @@
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
     <script>
-    !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
-    (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
-    r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
-    }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-XXXXX-X');
-    ga('send', 'pageview');
+        !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+            (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+            r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+        }
+        (window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-XXXXX-X');
+        ga('send', 'pageview');
     </script>
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="bower_components/angular-animate/angular-animate.js"></script>
     <script src="bower_components/angular-cookies/angular-cookies.js"></script>
     <script src="bower_components/angular-resource/angular-resource.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -440,15 +113,19 @@
     <script src="scripts/controllers/about.js"></script>
 
     <!-- endbuild -->
-    <script src="scripts/libs/modernizr-2.6.2.min.js"></script>
-    <script src="scripts/script.js"></script>
+    <!-- <script src="scripts/libs/modernizr-2.6.2.min.js"></script> -->
+    <!-- <script src="scripts/script.js"></script> -->
     <script src="scripts/libs/jquery-ui.min.js"></script>
     <script src="bower_components/bootstrap/js/affix.js"></script>
-    <script src="bower_components/bootstrap/js/carousel.js"></script>s
+    <script src="bower_components/bootstrap/js/carousel.js"></script>
+    <script src="bower_components/bootstrap/js/transition.js"></script>
+    <script src="bower_components/bootstrap/js/scrollspy.js"></script>
+    <script src="bower_components/bootstrap/js/dropdown.js"></script>
+    <script src="bower_components/bootstrap/js/collapse.js"></script>
     <!-- RevSlider -->
-    <script src="scripts/revolution-slider.js"></script>
+    <!-- <script src="scripts/revolution-slider.js"></script>
     <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-    <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script> -->
     <!-- End RevSlider -->
 </body>
 </html>
